@@ -1,0 +1,25 @@
+<h2>Resultados </h2>
+
+<br>
+<%= link_to "Nueva busqueda", root_path %>
+<br>
+<br>
+<div class="col-xs-12">
+<table class="table table-bordered">
+  <tr>
+    <th>Imagen</th>
+    <th>Descripcion</th>
+    <th>Precio</th>
+    <th>Link</th>
+  </tr>
+
+  <% @models.each do |model| %>
+      <tr>
+        <td><%= image_tag model.image %></td>
+        <td><%= model.title %></td>
+        <td >$ <%= model.price %></td>
+        <td><%= link_to name= "Link", model.permalink.html_safe %></td>
+        </tr>
+  <% end %>
+</table>
+</div>

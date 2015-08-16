@@ -1,0 +1,11 @@
+== README
+
+* Ruby version 2.2.0
+ * Rails version 4.2.3
+
+
+* Deployment instructions
+ *bundle install
+ *rake db:migrate
+ *rails server (http://localhost:3000)
+

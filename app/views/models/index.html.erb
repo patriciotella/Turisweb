@@ -1,0 +1,6 @@
+<%= form_tag({:controller => "models", :action => "search"}, :method => "get") do %>
+    <%= label_tag "search_field", "Escriba lo que desea buscar" %>
+    <%= text_field_tag "search_field", "", :required => "required" %>
+    <button class="btn btn-default"><%= submit_tag "Buscar" %></button>
+
+<% end %>
